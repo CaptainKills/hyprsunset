@@ -26,7 +26,7 @@ in
 
   hyprsunset = final: prev: {
     hyprsunset = prev.callPackage ./default.nix {
-      stdenv = prev.gcc15Stdenv;
+      stdenv = prev.gcc16Stdenv;
       version =
         version
         + "+date="

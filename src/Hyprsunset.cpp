@@ -44,7 +44,7 @@ static void timespecAddNs(timespec* pTimespec, int64_t delta) {
 static Mat3x3 matrixForKelvin(unsigned long long temp) {
     float r = 1.F, g = 1.F, b = 1.F;
 
-    temp /= 100;
+    temp /= 100.F;
 
     if (temp <= 66) {
         r = 255;
